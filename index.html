@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>خانه مهر </title>
+
+<meta name="description"      content="خانه مهر  | سفال، مانتو، سنگ مصنوعی و محصولات حیوانات خانگی">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="hero">
+
+<nav class="nav container">
+
+  <a href="#" class="brand">
+    <span class="brand-logo">م</span>
+
+    <span>
+      <strong>خانه مهر</strong>
+      <small>یزد</small>
+    </span>
+  </a>
+
+  <a href="#products" class="top-link">
+    مشاهده محصولات ↓
+  </a>
+
+</nav>
+
+<div class="hero-content container">
+
+  <div class="hero-text">
+
+    <span class="eyebrow">
+      ✨ ساخته‌شده با عشق در خانه مهر
+    </span>
+
+    <h1>
+      چیزهای قشنگ،
+      <br>
+      <span>برای آدم‌های خاص</span>
+    </h1>
+
+    <p>
+      محصولات خاص و دوست‌داشتنی خانه مهر یزد را
+      در یک جای زیبا و ساده پیدا کنید.
+    </p>
+
+    <a href="#products" class="hero-button">
+      شروع گشت‌وگذار
+      <span>←</span>
+    </a>
+
+  </div>
+
+  <div class="hero-art">
+
+    <div class="art-card card-1">🏺</div>
+    <div class="art-card card-2">👗</div>
+    <div class="art-card card-3">🐾</div>
+    <div class="art-card card-4">🪨</div>
+
+  </div>
+
+</div>
+
+  </header>
+
+  <!-- PRODUCTS -->
+
+  <main id="products" class="container">
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+  <div class="search-box">
+
+    <span>⌕</span>
+
+    <input
+      id="searchInput"
+      type="search"
+      placeholder="دنبال چی می‌گردی؟"
+    >
+
+    <button id="clearSearch">
+      ×
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="categories">
+
+  <button class="category active" data-category="all">
+    <span>🌈</span>
+    همه
+  </button>
+
+  <button class="category" data-category="pottery">
+    <span>🏺</span>
+    سفال
+  </button>
+
+  <button class="category" data-category="manto">
+    <span>👗</span>
+    مانتو
+  </button>
+
+  <button class="category" data-category="stone">
+    <span>🪨</span>
+    سنگ مصنوعی
+  </button>
+
+  <button class="category" data-category="pets">
+    <span>🐾</span>
+    حیوانات خانگی
+  </button>
+
+</section>
+
+
+<!-- TITLE -->
+
+<div class="section-head">
+
+  <div>
+
+    <span class="eyebrow">
+      مجموعه خانه مهر
+    </span>
+
+    <h2 id="resultsTitle">
+      همه محصولات
+    </h2>
+
+  </div>
+
+  <span id="countBadge" class="count-badge">
+    ۰ محصول
+  </span>
+
+</div>
+
+
+<!-- PRODUCT GRID -->
+
+<section
+  id="productGrid"
+  class="product-grid">
+</section>
+
+
+<!-- EMPTY -->
+
+<div
+  id="emptyState"
+  class="empty hidden">
+
+  <div>🔎</div>
+
+  <h3>
+    چیزی پیدا نشد
+  </h3>
+
+  <p>
+    اسم محصول یا دسته‌بندی دیگری را امتحان کن.
+  </p>
+
+</div>
+
+
+<!-- LOAD MORE -->
+
+<div
+  id="loadMoreWrap"
+  class="load-more-wrap hidden">
+
+  <button
+    id="loadMore"
+    class="load-more">
+
+    نمایش محصولات بیشتر ↓
+
+  </button>
+
+</div>
+
+  </main>
+
+  <!-- FIXED ORDER BUTTON -->
+
+<a
+ href="#"
+ id="orderButton"
+ class="order-button">
+
+<span class="order-icon">
+  🛒
+</span>
+
+<span>
+  <strong>ثبت سفارش</strong>
+  <small>برای سفارش محصول کلیک کنید</small>
+</span>
+
+  </a>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+<div class="container footer-inner">
+
+  <div>
+
+    <strong>
+      خانه مهر یزد
+    </strong>
+
+    <span>
+      برای چیزهایی که ارزش دوست‌داشتن دارند 💛
+    </span>
+
+  </div>
+
+  <span>
+    © <span id="year"></span>
+    خانه مهر
+  </span>
+
+</div>
+
+  </footer>
+
+  <!-- PRODUCT MODAL -->
+
+  <div
+    id="modal"
+    class="modal hidden">
+
+<button
+  id="modalClose"
+  class="modal-close">
+  ×
+</button>
+
+<div class="modal-card">
+
+  <img
+    id="modalImage"
+    alt=""
+  >
+
+  <div class="modal-info">
+
+    <span id="modalCategory"></span>
+
+    <h2 id="modalTitle"></h2>
+
+    <p id="modalDescription"></p>
+
+    <button
+      id="modalOrder"
+      class="modal-order">
+
+      🛒 ثبت سفارش این محصول
+
+    </button>
+
+  </div>
+
+</div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+  </html>
