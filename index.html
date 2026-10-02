@@ -11,6 +11,17 @@
 
 <style>
 
+  .support-btn{
+  background:#ffffff;
+  color:#7c3aed;
+  border:none;
+  padding:12px 18px;
+  border-radius:18px;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+  }
+  
   .phone-btn{
   background:#16a34a;
   color:white;
@@ -1436,8 +1447,12 @@ onclick="openOrder()">
 
 🛒 ثبت سفارش
 
+  
+<button onclick="openSupport()" class="support-btn">
+  💬 پشتیبانی
 </button>
 
+</button>
 
 <button
 class="top-button"
@@ -2269,6 +2284,30 @@ function callPhone(){
 
 }
 
+function openSupport(){
+
+  const choice = prompt(
+    "💬 پشتیبانی خانه مهر\n\n" +
+    "1️⃣ تماس تلفنی\n" +
+    "2️⃣ پیامک\n" +
+    "3️⃣ تلگرام\n\n" +
+    "شماره گزینه را وارد کنید:"
+  );
+
+  if(choice === "1"){
+    window.location.href = "tel:09934276912";
+  }
+
+  if(choice === "2"){
+    window.location.href = "sms:09934276912";
+  }
+
+  if(choice === "3"){
+    window.location.href = "https://t.me/NavidArtAdmin";
+  }
+
+}
+  
   </script>
 </body>
 </html>
