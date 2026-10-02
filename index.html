@@ -11,7 +11,12 @@
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+  .phone-btn{
+  background:#16a34a;
+  color:white;
+    }
+
+  @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
 
 :root{
   --purple:#8b5cf6;
@@ -1898,9 +1903,17 @@ function renderProducts(){
                 class="small-btn order-btn"
                 onclick="orderProduct(${product.id})">
 
-                🛒 سفارش
+                🛒 سفارش 
+    
+             </button>
 
-              </button>
+             <button
+ class="small-btn phone-btn"
+ onclick="callPhone()">
+
+ 📞 تماس
+
+</button>
 
             </div>
 
@@ -2247,8 +2260,14 @@ document.addEventListener(
 
 renderProducts();
 
-</script>
+  
+function callPhone(){
 
+  window.location.href =
+  "tel:09934276912";
 
+}
+
+  </script>
 </body>
 </html>
